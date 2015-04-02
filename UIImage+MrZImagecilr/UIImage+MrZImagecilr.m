@@ -1,10 +1,4 @@
-//
-//  UIImage+MrZImagecilr.m
-//  NewApp2015
-//
-//  Created by 疯兔 on 15/3/22.
-//  Copyright (c) 2015年 Mr.z. All rights reserved.
-//
+
 
 #import "UIImage+MrZImagecilr.h"
 
