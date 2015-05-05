@@ -5,7 +5,7 @@
  
 ####NSString+SandboxPath
 	 可以将URL文件路径拼接成沙盒路径字符串
-#####ZWWebImageView超轻量级网络图片
+#####ZWWebImageView网络图片处理
      如何使用:
 	 #import "UIImageView+ZWWebImageView.h"
 	 - (void)setWebImageFromURL:(NSString *)URLString;
@@ -14,7 +14,7 @@
 	 -(void)cache:(NSCache *)cache willEvictObject:(id)obj
 	 该代理方法仅供调试用，注意关闭
 	 
-####ZWXMLSAXManager单层xml超轻量级解析
+####~~ZWXMLSAXManager单层xml,这个只能解析单层嵌套，停用~~
 	 如何使用:
 	 #import "ZWXMLSAXManager.h"
      SAX解析xml,解析完成后以数组包含字典的形式进行回调,目前只支持一层数据解析
@@ -31,3 +31,12 @@
      @param parseEnd 解析完成后以数组包含字典的形式的回调
      @param test     测试模式，输出各个阶段的NSLog
 	 -(void)parseWithURLString:(NSString *)URL parseEnd:(parseEndBlock)parseEnd andTestMod:(BOOL)test
+	 
+####MRZNewXMLparser深层嵌套XML转字典(已知bug，深层同级同名属性会覆盖，待修复)
+
+````
+如何使用:
+#import "MRZNewXMLparser.h"
+MRZNewXMLparser *parser = [[MRZNewXMLparser alloc]init];
+NSDictionary *dict = [parser parseData:data];
+````
