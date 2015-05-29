@@ -41,3 +41,4 @@ NSDictionary *dict = [parser parseData:data];
 ````
 ####Log扩展NSLog对字典和数组对象打印的分类，加入到工程即可无需导入头文件
 ####NETWork封装了指纹识别
+####WLDeviceInfo封装了设备信息以及网络运营商信息取得
