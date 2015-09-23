@@ -44,3 +44,7 @@ NSDictionary *dict = [parser parseData:data];
 ####WLDeviceInfo封装了设备信息以及网络运营商信息取得
 ####BleWork封装了蓝牙设备的链接以及数据回调/使用了xcodecolors控制台颜色插件
 ####Log中新增了对xcodecolor插件的宏设置
+
+####2015-9-23 新增BtnNoRepeat
+
+	BtnNoRepeat解决了Btn重复点击问题
