@@ -45,6 +45,7 @@ NSDictionary *dict = [parser parseData:data];
 ####BleWork封装了蓝牙设备的链接以及数据回调/使用了xcodecolors控制台颜色插件
 ####Log中新增了对xcodecolor插件的宏设置
 
-####2015-9-23 新增BtnNoRepeat
+#### 新增BtnNoRepeat
+#### 新增ZOEImageView用来处理同一URL图片更换问题
 
 	BtnNoRepeat解决了Btn重复点击问题
