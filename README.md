@@ -53,4 +53,4 @@ NSDictionary *dict = [parser parseData:data];
 #### 新增ZOEImageView用来处理同一URL图片更换问题
 
     -(void)zoe_setImageFromURLString:(NSString *)URLString;
-    由于使用面窄，仅支持沙盒缓存
+    由于使用面窄，仅支持沙盒缓存,多用于头像处理，支持gif动画
