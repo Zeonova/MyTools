@@ -48,6 +48,9 @@ NSDictionary *dict = [parser parseData:data];
 #### 新增BtnNoRepeat
 
 
-	BtnNoRepeat解决了Btn重复点击问题
+	BtnNoRepeat解决了Btn重复点击问题，拖进项目即可生效
 	
 #### 新增ZOEImageView用来处理同一URL图片更换问题
+
+    -(void)zoe_setImageFromURLString:(NSString *)URLString;
+    由于使用面窄，仅支持沙盒缓存
