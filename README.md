@@ -46,6 +46,8 @@ NSDictionary *dict = [parser parseData:data];
 ####Log中新增了对xcodecolor插件的宏设置
 
 #### 新增BtnNoRepeat
-#### 新增ZOEImageView用来处理同一URL图片更换问题
+
 
 	BtnNoRepeat解决了Btn重复点击问题
+	
+#### 新增ZOEImageView用来处理同一URL图片更换问题
