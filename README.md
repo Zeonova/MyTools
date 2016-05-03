@@ -54,3 +54,5 @@ NSDictionary *dict = [parser parseData:data];
 
     -(void)zoe_setImageFromURLString:(NSString *)URLString;
     由于使用面窄，仅支持沙盒缓存,多用于头像处理，支持gif动画
+    
+#### 新增ZOEkeychain简单封装了钥匙串的使用
