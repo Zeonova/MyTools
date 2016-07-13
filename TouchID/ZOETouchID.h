@@ -10,7 +10,7 @@
 extern NSString *const userNameKey;
 extern NSString *const userPWDKey;
 typedef void(^completionBlock)(BOOL success,NSError *error);
-@interface NETWork : NSObject
+@interface ZOETouchID : NSObject
 @property(strong,nonatomic)NSString *localAuthenticationString;
 + (instancetype)sharedManager;
 - (void)saveUserinfoForKey:(NSString *)key withObject:(NSString *)object;

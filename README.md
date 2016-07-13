@@ -57,3 +57,4 @@ NSDictionary *dict = [parser parseData:data];
     
 #### 新增ZOEkeychain简单封装了钥匙串的使用
 #### 新增networkClass 简单封装了AFN3.0，内置了一个栗子
+#### 新增BaseNetWork 封装了AFN3.0,AES加密解密，以及多线程操作

@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 ZW. All rights reserved.
 //
 
-#import "NETWork.h"
+#import "ZOETouchID.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 #import <UIKit/UIKit.h>
 NSString *const userNameKey = @"userName";
 NSString *const userPWDKey  = @"userPWD";
-@implementation NETWork
+@implementation ZOETouchID
 
 +(instancetype)sharedManager
 {
@@ -45,6 +45,8 @@ NSString *const userPWDKey  = @"userPWD";
     Local = [UIDevice currentDevice].systemVersion.floatValue >= 8.0;
     if (Local == NO) return;
     LAContext *context = [[LAContext alloc]init];
+    [context setLocalizedFallbackTitle:@"输入手势密码"];
+    NSLog(@"%@",context.localizedFallbackTitle);
     Local = [context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:NULL];
     if (Local == NO) return;
     [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:self.localAuthenticationString reply:^(BOOL success, NSError *error) {
@@ -54,7 +56,7 @@ NSString *const userPWDKey  = @"userPWD";
 -(NSString *)localAuthenticationString
 {
     if (_localAuthenticationString == nil) {
-        _localAuthenticationString = @"test localAuthenticationSting";
+        _localAuthenticationString = @"通过Home键验证已有手机指纹";
     }
     return _localAuthenticationString;
 }
